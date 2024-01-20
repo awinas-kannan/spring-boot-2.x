@@ -1,0 +1,11 @@
+Java + Event Hub :
+Legacy way :
+https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-java-get-started-send-legacy
+
+
+Current Way:
+https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-java-get-started-send
+
+Event Hub Name Space :
+  Event Hub Name :
+     Consumer group ?
