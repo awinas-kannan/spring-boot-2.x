@@ -1,4 +1,0 @@
-com/consumer/kafka/config/KafkaConsumerConfig.class
-com/consumer/kafka/model/User.class
-com/consumer/kafka/SpringKafkaConsumerApplication.class
-com/consumer/kafka/listner/KafkaConsumer.class
