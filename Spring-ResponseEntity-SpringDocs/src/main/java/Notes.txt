@@ -1,0 +1,7 @@
+
+
+Dependencies:
+
+Spring Web ( @RestController ,ResponseEntity &So on)
+lombok 
+Spring docs - Swagger (https://www.baeldung.com/spring-rest-openapi-documentation)
