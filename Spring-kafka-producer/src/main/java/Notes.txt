@@ -1,0 +1,44 @@
+Reference : Tech Primers channel
+https://www.youtube.com/watch?v=NjHYWEV_E_o&list=PLTyWtrsGknYegrUmDZB6rcqMotOFZKvbn&index=19
+
+Dependency:
+Spring Web
+Spring Kafka
+
+For A normal Kafaka with Stirng & Stirng No config is required and also
+If the kafka is running in same machine ,we dont need seperate config.
+
+When we use kafkatemplate.send(topic,date);
+->Message will be published to kafka topic
+ 
+ 
+Without zookeeper,Kafka Started :
+Error :Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+
+
+Starting Kafka Instance :
+Go to Kafka Folder: /Users/a0m0rtj/AwinasKannan/Softwares/kafka_2.13-3.0.0
+
+Start Zookeeper:::::::
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+Start Kafka Server:::::::
+bin/kafka-server-start.sh config/server.properties
+
+Create Kafka Topic:::::::
+Command below not working:
+bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic kafka_string_producer
+So used this below command
+bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic kafka_string_producer
+
+KAFKA CONSUMER THROUGH TERMINAL:
+
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic kafka_string_producer --from-beginning
+
+KAFKA PRODUCER THROUGH TERMINAL:
+
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic kafka_string_producer
+bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic kafka_string_producer
+
+###########################################################################################################################
+

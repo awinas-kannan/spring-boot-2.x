@@ -1,0 +1,21 @@
+spring:
+   application:
+      name: SpringBootWebApp
+server:
+   port: 8080
+
+---
+spring:
+   profiles: dev
+   application:
+      name: SpringBootWebApp
+server:
+   port: 9091
+
+---
+spring: 
+   profiles: prod
+   application:
+      name: SpringBootWebApp
+server: 
+   port: 4431

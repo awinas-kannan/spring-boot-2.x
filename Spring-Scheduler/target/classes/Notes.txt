@@ -1,0 +1,21 @@
+Spring Scheduler: https://www.youtube.com/watch?v=92-qLIxv0JA
+Piece of business job ,that should run on schedulaed basis
+Its a part of spring , so no need to add any special dependency
+Tells spring container to run partucular method 
+
+@EnableScheduling -> in Any configuration class ( Class should be annotated with @Configuration)
+Adding this configutaiotn to Spring boot main class , will be enabled in unit test & integration test ( will cause probled while using syp bean
+or Mock bean)
+So its better we add it in seperate class.
+
+Scheduler can be enabled based on
+@ConditionalOnProperty(name = { "schedular.enabled" }, havingValue = "" )
+
+Add schedular.enabled in env variable
+schedular.enabled=true
+havingValue = true / "" -> scheduler will run
+havingValue = false  / "xx" ->scheduler will not run
+
+@Scheduled(fixedRate = 2000l) -> Runs the program every two seconds
+@Scheduled(fixedDelay = 2000l) -> Runs the Program after two seconds of completing the program.
+
