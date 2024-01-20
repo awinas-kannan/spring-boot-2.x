@@ -1,0 +1,14 @@
+spring:
+  kafka: 
+#    bootstrap-servers: samsclubmxfs-eventhub.servicebus.windows.net:9093
+#    jaas.enabled: true
+    topics: export
+#    properties:
+#      sasl.jaas.config: org.apache.kafka.common.security.plain.PlainLoginModule required username="$ConnectionString" password="Endpoint=sb://samsclubmxfs-eventhub.servicebus.windows.net/;SharedAccessKeyName=RDP;SharedAccessKey=HA4E52lGnKvWZmdPfvV68uexWzDR+msTkDV6DawovkQ=";
+#      sasl.mechanism: PLAIN
+#      security.protocol: SASL_SSL
+#    consumer:
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      group-id: $Default
+#    listener:
+#      ack-mode: manual
