@@ -1,0 +1,30 @@
+Reference :
+https://www.youtube.com/watch?v=4Hyv4M1kFeM
+
+Websockets ::: 
+
+	Like HTTP ,WebSockets is Communication Protocol
+	
+	WebSockets is a bidirectional, full-duplex, persistent connection between a web browser and a server. 
+	
+	Once a WebSocket connection is established, the connection stays open until the client or server decides to close this connection.
+	
+	This is the reason why websocket is preferred over HTTP where the client nd server need to exchange information at high frequency 
+	and with low frequency
+
+****************
+
+
+STOMP : Streaming text oriented messaging protocol
+
+Web sockets is just communication protocol .They dont know how to send message only to users who are subscribed to particular topic 
+or how to send a message to particular user. We need STOMP for these functionalities
+
+STOMP is text based protocal which allows its clients to talk with any other message broker supporting the protocol
+
+Spring provides default support for it but you also use other messaging protocal like Rabbit MQ / Active MQ
+
+withSockJS() ?
+ -> The advantage of using socketJS is whenever websocket connection is disconnected or connection is not established ,then the 
+ connection will be downgraded to HTTP and communication b/w client and server will still continue.
+ 
